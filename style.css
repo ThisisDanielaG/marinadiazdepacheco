@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  background: #fdf0f3;
+  color: #5d474e;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+body {
+  margin: 0;
+  background:
+    linear-gradient(
+      180deg,
+      #fdf5f7 0%,
+      #fbe9ee 55%,
+      #f8e0e7 100%
+    );
+  color: #5d474e;
+}
+.section-card {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 42px;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(198, 143, 157, 0.22);
+  border-radius: 28px;
+  box-shadow: 0 12px 35px rgba(116, 76, 88, 0.08);
+}
+.hero-photo {
+  width: 320px;
+  max-width: 85%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  margin: 30px auto;
+  border-radius: 22px;
+  border: 8px solid rgba(255,255,255,0.8);
+  box-shadow: 0 14px 35px rgba(101, 71, 79, 0.18);
+}
+.flower {
+  position: absolute;
+  width: 300px;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.flower-left {
+  top: 0;
+  left: 0;
+}
+
+.flower-right {
+  top: 0;
+  right: 0;
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 90px 20px 70px;
+}
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+  font-weight: 500;
+}
+h1 {
+  font-size: clamp(2.7rem, 8vw, 5.5rem);
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+.timeline-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 24px;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(120,80,90,0.15);
+}
+
+.time {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  color: #a56f7c;
+  font-weight: 600;
+}
+.button {
+  display: inline-block;
+  padding: 14px 22px;
+  background: #c98f9d;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+.parking-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.photo-card {
+  overflow: hidden;
+  background: rgba(255,255,255,0.75);
+  border-radius: 22px;
+  box-shadow: 0 8px 24px rgba(90,60,70,0.08);
+}
+
+.photo-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.photo-card h3,
+.photo-card p {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+@media (max-width: 700px) {
+  .parking-grid {
+    grid-template-columns: 1fr;
+  }
+}
+section {
+  padding: 60px 20px;
+}
